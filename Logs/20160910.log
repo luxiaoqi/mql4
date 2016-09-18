@@ -1,0 +1,41 @@
+0	07:48:37.342	Compiling 'MACD Sample'
+0	07:48:37.342	Compiling 'Moving Average'
+0	07:48:40.513	Compiling 'Accelerator'
+0	07:48:40.514	Compiling 'Accumulation'
+0	07:48:40.514	Compiling 'Alligator'
+0	07:48:40.514	Compiling 'ATR'
+0	07:48:40.514	Compiling 'Awesome'
+0	07:48:40.514	Compiling 'Bands'
+0	07:48:40.514	Compiling 'Bears'
+0	07:48:40.514	Compiling 'Bulls'
+0	07:48:40.514	Compiling 'CCI'
+0	07:48:40.515	Compiling 'Custom Moving Averages'
+0	07:48:40.515	Compiling 'Heiken Ashi'
+0	07:48:40.515	Compiling 'Ichimoku'
+0	07:48:40.515	Compiling 'iExposure'
+0	07:48:40.515	Compiling 'MACD'
+0	07:48:40.515	Compiling 'Momentum'
+0	07:48:40.515	Compiling 'OsMA'
+0	07:48:40.515	Compiling 'Parabolic'
+0	07:48:40.515	Compiling 'RSI'
+0	07:48:40.516	Compiling 'Stochastic'
+0	07:48:40.516	Compiling 'ZigZag'
+0	07:48:40.516	Compiling 'SimplePanel'
+0	07:48:48.078	Compiling 'PeriodConverter'
+0	07:48:48.078	Compiling 'DLLSampleTester'
+0	07:48:48.079	Compiling 'PipeClient'
+0	07:48:48.079	Compiling 'PipeClientPure'
+0	07:48:51.617	Compiling 'stdlib'
+0	16:28:50.144	Expert Simple_EA USDCHF,H1: loaded successfully
+0	16:28:53.997	Simple_EA USDCHF,H1: initialized
+0	16:29:34.535	Simple_EA USDCHF,H1: uninit reason 4
+0	16:29:34.546	Expert Simple_EA USDCHF,H1: removed
+0	16:29:35.984	Expert Simple_EA USDCHF,H1: loaded successfully
+0	16:29:48.037	Simple_EA USDCHF,H1: initialized
+1	16:29:55.221	Simple_EA USDCHF,H1: debugging terminated
+0	16:29:55.239	Simple_EA USDCHF,H1: uninit reason 4
+0	16:29:55.245	Expert Simple_EA USDCHF,H1: removed
+0	16:29:56.988	Expert Simple_EA USDCHF,H1: loaded successfully
+0	16:30:03.122	Simple_EA USDCHF,H1: initialized
+0	16:30:45.541	Simple_EA USDCHF,H1: uninit reason 4
+0	16:30:45.571	Expert Simple_EA USDCHF,H1: removed
