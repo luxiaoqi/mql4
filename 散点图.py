@@ -5,15 +5,22 @@ Created on Thu Sep 24 16:37:21 2015
 @author: Eddy_zheng
 """
 
-import scipy.io as sio  
+#import scipy.io as sio  
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+from sys import argv
+import re
 
-mat1 = '4a.mat' #这是存放数据点的文件，需要它才可以画出来。上面有下载地址
-data = sio.loadmat(mat1)
-m = data['data']
+projectname , fileName = argv
+file_read = open(fileName, "r")
+x,y,z = [], [], []
+for line in file_read:
+	textArray = re.split(r'[\s]+', line);
+	#print textArray
+	x.append(float(textArray[1]))
+	y.append(float(textArray[8]))
+	z.append(float(textArray[9]))
 
-x,y,z = m[0],m[1],m[2]
 ax=plt.subplot(111,projection='3d') #创建一个三维的绘图工程
 
 #将数据点分成三部分画，在颜色上有区分度
