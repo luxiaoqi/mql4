@@ -12,6 +12,7 @@ input double TrailingStop  =30;
 input double MACDOpenLevel =3;
 input double MACDCloseLevel=2;
 input int    MATrendPeriod =26;
+
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
