@@ -1,8 +1,9 @@
 import numpy as np
 import urllib
 from sklearn import metrics
-from sklearn.ensemble import ExtraTreesClassifier
-import scipy
+#import sklearn
+#from sklearn.ensemble import ExtraTreesClassifier
+#import scipy
 # url with dataset
 url = "http://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.data"
 # download the file
@@ -17,7 +18,6 @@ y = dataset[:,8]
 
 
 
-model = ExtraTreesClassifier()
-model.fit(X, y)
-# display the relative importance of each attribute
-print(model.feature_importances_)
+#model = ExtraTreesClassifier()
+#model.fit(X, y)
+#print(model.feature_importances_)
