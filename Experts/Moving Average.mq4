@@ -6,7 +6,7 @@
 #property copyright   "2005-2014, MetaQuotes Software Corp."
 #property link        "http://www.mql4.com"
 #property description "Moving Average sample expert advisor"
-
+#include <Files\\FileTxt.mqh>
 #define MAGICMA  20131111
 //--- Inputs
 input double Lots          =0.1;
@@ -14,6 +14,14 @@ input double MaximumRisk   =0.02;
 input double DecreaseFactor=3;
 input int    MovingPeriod  =12;
 input int    MovingShift   =6;
+CFileTxt file;
+int OnInit()
+  {
+   file.Open("c:\\lxq.txt", 0);
+   file.WriteString("hello world!\n");
+   file.Flush();
+   return(INIT_SUCCEEDED);
+  }
 //+------------------------------------------------------------------+
 //| Calculate open positions                                         |
 //+------------------------------------------------------------------+
