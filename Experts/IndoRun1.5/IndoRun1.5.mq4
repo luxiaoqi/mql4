@@ -52,7 +52,7 @@ extern double SF2MinuteOn =45;
 extern double SF2Hour_Off = 17;
 extern double SF2MinuteOff = 30;
 extern string Info9 = "News Filter Setup";
-extern bool AvoidNews = true; //Switches News Filter on/off
+extern bool AvoidNews = false; //Switches News Filter on/off
 extern bool High_Impact=true;
 extern int MinsUntilNextHighNews=90;
 extern int MinsSincePrevHighNews=90;
@@ -433,6 +433,7 @@ void HoursFilter22()
 {
     int datetime800 = TimeCurrent();
     int hour0 = TimeHour(datetime800);
+    int minute0 = TimeMinute(datetime800);
     datetime currTime = TimeCurrent();
     double SF1HourOn = SF1Hour_On + GMTOffset;
     double SF1HourOff = SF1Hour_Off + GMTOffset;
@@ -905,7 +906,7 @@ void CheckLastOrderType33()
         {
             lastCloseTime = OrderCloseTime();
             orderType = OrderType();
-        }
+        } 
     }
     if (orderType == OP_SELL || FirstTime33)
     {
@@ -1089,7 +1090,7 @@ double LotSize()
       if(Lots<Lot)Lots=Lot;
       AutoLot= "10K Lotsize active!";
    }
-   
+   double temp = AccountBalance();
    if ((AutoLotSize)&&(Risk>0)&&(!KLotSize))
    {
       Lots=(AccountBalance()*Risk*MinLots)/1000;
