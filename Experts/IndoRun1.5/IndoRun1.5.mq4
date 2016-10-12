@@ -686,19 +686,25 @@ bool ReadATR()
        {  
           FilterMods = "Standard!";
        
-          if (ATRPrePips1 >= ATRDnLimit1 && ATRPrePips1 <= ATRUpLimit1 && ATRPrePips2 >= ATRDnLimit1 && ATRPrePips2 <= ATRUpLimit1 && ATRPips >= ATRDnLimit1 && ATRPips <= ATRUpLimit1 )
+          if (ATRPrePips1 >= ATRDnLimit1 && ATRPrePips1 <= ATRUpLimit1 
+            && ATRPrePips2 >= ATRDnLimit1 && ATRPrePips2 <= ATRUpLimit1 
+            && ATRPips >= ATRDnLimit1 && ATRPips <= ATRUpLimit1 )
            {
             ATR = "ATR not filtering!";
             Zone1 = "Open!";
             return(1);
           }      
-          if (ATRPrePips1 >= ATRDnLimit2 && ATRPrePips1 <= ATRUpLimit2 && ATRPrePips2 >= ATRDnLimit2 && ATRPrePips2 <= ATRUpLimit2 && ATRPips >= ATRDnLimit2 && ATRPips <= ATRUpLimit2 )  
+          if (ATRPrePips1 >= ATRDnLimit2 && ATRPrePips1 <= ATRUpLimit2 
+            && ATRPrePips2 >= ATRDnLimit2 && ATRPrePips2 <= ATRUpLimit2 
+            && ATRPips >= ATRDnLimit2 && ATRPips <= ATRUpLimit2 )  
           {
             ATR = "ATR not filtering!";
             Zone2 = "Open!";
             return(1);
           }       
-          if (ATRPrePips1 >= ATRDnLimit3 && ATRPrePips1 <= ATRUpLimit3 && ATRPrePips2 >= ATRDnLimit3 && ATRPrePips2 <= ATRUpLimit3 && ATRPips >= ATRDnLimit3 && ATRPips <= ATRUpLimit3 )
+          if (ATRPrePips1 >= ATRDnLimit3 && ATRPrePips1 <= ATRUpLimit3 
+            && ATRPrePips2 >= ATRDnLimit3 && ATRPrePips2 <= ATRUpLimit3 
+            && ATRPips >= ATRDnLimit3 && ATRPips <= ATRUpLimit3 )
           {
             ATR = "ATR not filtering!";
             Zone3 = "Open!";
